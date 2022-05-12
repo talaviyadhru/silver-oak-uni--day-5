@@ -1,0 +1,77 @@
+
+
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+            
+           
+			#MainUL li ul li{
+          
+               
+                display: none;
+               
+            }
+			#MainUL li:hover ul li{ 
+                display:block;
+                color: rgb(26, 8, 43);
+            }
+			#MainUL li:hover ul li ul li{
+                display:none;
+                color: rgb(187, 184, 179);
+            }
+			#MainUL li ul li:hover ul li{
+                display:block;
+                color: rgb(121, 121, 182);
+            }
+			#MainUL li ul li:hover ul li ul li{
+                display:none;
+                color: rgb(13, 16, 92);
+            }
+			#MainUL li ul li ul li:hover ul li{
+                display:block;
+                color: rgb(9, 62, 44);
+            }
+		</style>
+		
+	</head>
+	<body>
+		
+		<ul id="MainUL">
+			<li class="c">Google
+				<ul>
+					<li>Gmail
+						<ul>
+							<li>Sign Up</li>
+							<li>Sign In
+								<ul>
+									<li>Sign In As Admin</li>
+									<li>Sign In As Member</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Youtube</li>
+					<li>GDrive</li>
+					<li>GMap</li>
+				</ul>
+			</li>
+			<li class="c">Facebook</li>
+			<li class="c">Microsoft
+				<ul>
+					<li>Bing</li>
+					<li>Linked In</li>
+				</ul>
+			</li>
+			<li class="c">MSN</li>
+			<li class="c">Amazon
+				<ul>
+					<li>AWS</li>
+					<li>Ecommerce</li>
+					<li>A-ML</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</body>
+</html>
